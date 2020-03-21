@@ -1,2 +1,2 @@
 # Landing-Page-Design-
-A generic landing page layout for brands and companies  
+A generic landing page layout for brands, companies, or portfolios.  
