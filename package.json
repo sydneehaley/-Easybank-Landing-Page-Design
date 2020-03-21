@@ -1,0 +1,29 @@
+{
+  "name": "landing-page-design",
+  "version": "1.0.0",
+  "description": "A landing page design for brands, companies, or portfolios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sydneehaley/Landing-Page-Design.git"
+  },
+  "keywords": [
+    "landing",
+    "page"
+  ],
+  "author": "Sydnee Haley (sydneehaley.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sydneehaley/Landing-Page-Design/issues"
+  },
+  "homepage": "https://github.com/sydneehaley/Landing-Page-Design#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2"
+  }
+}
