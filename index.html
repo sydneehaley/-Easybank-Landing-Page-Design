@@ -5,23 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Landing Page Design</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../Landing-Page-Design/public/css/main.css" />
   </head>
   <body>
-    <div class="navbar">
-      <div class="navbar__logo"><img src="./images/logo.svg" /></div>
+    <div class="mobile__hide">
+      <nav class="navbar__desktop">
+        <div class="navbar__desktop--logo"><img src="./images/logo.svg" /></div>
 
-      <div class="navbar__nav">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Blog</a>
-        <a href="#">Careers</a>
-      </div>
+        <div class="navbar__desktop--nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
 
-      <div class="navbar__cta">
-        <button class="navbar__requestbutton" type="submit">
-          Request Invite
-        </button>
+        <div class="navbar__desktop--cta">
+          <button class="navbar__desktop--requestbutton" type="submit">
+            Request Invite
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="desktop__hide">
+      <nav class="navbar__mobile">
+        <div class="navbar__mobile--logo"><img src="./images/logo.svg" /></div>
+        <div class="navbar__mobile--nav">
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="nav__hide">
+        <div class="navbar__links--bg">
+          <ul>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -200,5 +227,7 @@
         <p>© Easybank. All Rights Reserved</p>
       </div>
     </div>
+
+    <script src="./public/js/app.js"></script>
   </body>
 </html>

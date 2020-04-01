@@ -25,5 +25,8 @@
   "devDependencies": {
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "hamburgers": "^1.1.3"
   }
 }
