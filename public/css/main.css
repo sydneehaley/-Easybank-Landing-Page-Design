@@ -113,7 +113,9 @@ body {
     padding-left: 0.9rem; }
   .navbar__mobile--nav {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0 0 9rem; }
   .navbar__links--bg {
     display: flex;
     flex-direction: column;
@@ -132,7 +134,7 @@ body {
     text-align: center;
     margin: 1rem;
     padding: 1rem;
-    position: absolute;
+    position: relative;
     z-index: 3; }
   .navbar__links--bg a {
     display: -webkit-inline-box;
@@ -145,14 +147,31 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    width: 100%;
     margin: auto;
-    padding: 0 0.5rem;
     color: #9698a6;
     font-size: 0.8rem;
     line-height: 3.98rem;
-    position: relative; }
-  .navbar__links--bg a:hover {
+    position: relative;
+    z-index: 4; }
+  .navbar__links--bg a:hover::after {
     color: #2d314d; }
+  .navbar__links--bg a::after {
+    content: '';
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(95deg, #31d35c, #2bb7da);
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 200ms ease; }
+  .navbar__links--bg a:hover::after {
+    transform: scale(1); }
+  .nav__hide {
+    display: block; }
   .navbar__requestbutton {
     border-radius: 50px;
     background: #31d35c;
@@ -167,8 +186,6 @@ body {
     height: 3px;
     background: black;
     margin: 2px; }
-  nav {
-    position: relative; }
   .hamburger {
     cursor: pointer;
     display: flex;
@@ -177,10 +194,57 @@ body {
     align-items: center;
     padding: 0 0 0 9rem;
     z-index: 2; }
-  .navbar__links--bg.open {
-    transition: all 0.5s ease 0.4s; }
-  .nav__hide {
-    display: none; } }
+  #nav-icon1 {
+    width: 24px;
+    height: 12px;
+    position: relative;
+    margin: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer; }
+  #nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #2d314d;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out; }
+  #nav-icon1 span:nth-child(1) {
+    top: 0px; }
+  #nav-icon1 span:nth-child(2) {
+    top: 6px; }
+  #nav-icon1 span:nth-child(3) {
+    top: 12px; }
+  #nav-icon1.open span:nth-child(1) {
+    top: 8px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  #nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px; }
+  #nav-icon1.open span:nth-child(3) {
+    top: 8px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg); } }
 
 /* Jumbotron Area */
 .jumbotron {

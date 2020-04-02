@@ -1,7 +1,12 @@
 $(document).ready(function() {
+  $('#nav-icon1').click(function() {
+    $(this).toggleClass('open');
+  });
+
   $('.nav__hide').hide();
 
-  $('.hamburger').click(function() {
-    $('.nav__hide').slideToggle('slow');
+  $('#nav-icon1').click(function() {
+    $('.nav__hide').toggle();
+    $('.nav__hide').fadeIn();
   });
 });
