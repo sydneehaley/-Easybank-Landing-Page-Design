@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../Landing-Page-Design/public/css/main.css" />
   </head>
   <body>
-    <div class="mobile__hide">
+    <section class="mobile__hide">
       <nav class="navbar__desktop">
         <div class="navbar__desktop--logo"><img src="./images/logo.svg" /></div>
 
@@ -30,9 +30,9 @@
           </button>
         </div>
       </nav>
-    </div>
+    </section>
 
-    <div class="desktop__hide">
+    <section class="desktop__hide">
       <nav class="navbar__mobile">
         <div class="navbar__mobile--logo"><img src="./images/logo.svg" /></div>
         <div class="navbar__mobile--nav">
@@ -44,19 +44,17 @@
         </div>
       </nav>
 
-      <div class="nav__hide">
-        <div class="navbar__links--bg">
-          <ul>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Blog</a>
-            <a href="#">Careers</a>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <nav id="navbar__links--container" class="slide">
+        <ul>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </ul>
+      </nav>
+    </section>
 
-    <div class="jumbotron">
+    <section class="jumbotron">
       <div class="jumbotron__blurb">
         <h1>Next generation digital banking</h1>
         <p>
@@ -71,9 +69,9 @@
       <div class="jumbotron__splash">
         <img src="images/image-mockups.png" />
       </div>
-    </div>
+    </section>
 
-    <div class="section__expertise">
+    <section class="section__expertise">
       <div class="section__expertise--blurb">
         <h2>Why choose Easybank?</h2>
 
@@ -124,9 +122,9 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section__articles">
+    <section class="section__articles">
       <div class="section__articles--blurb">
         <h2>Latest Articles</h2>
       </div>
@@ -185,9 +183,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="footer">
+    <section class="footer">
       <div class="footer__column1">
         <div class="footer__column1--logo">
           <img
@@ -230,7 +228,7 @@
         <button class="button__request" type="submit">Request Invite</button>
         <p>© Easybank. All Rights Reserved</p>
       </div>
-    </div>
+    </section>
 
     <script src="./public/js/app.js"></script>
   </body>

@@ -3,10 +3,9 @@ $(document).ready(function() {
     $(this).toggleClass('open');
   });
 
-  $('.nav__hide').hide();
+  $('#navbar__links--container').hide();
 
   $('#nav-icon1').click(function() {
-    $('.nav__hide').toggle();
-    $('.nav__hide').fadeIn();
+    $('#navbar__links--container').slideToggle('slow');
   });
 });
