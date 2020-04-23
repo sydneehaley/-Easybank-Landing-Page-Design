@@ -9,7 +9,7 @@ body {
   overflow-x: hidden; }
 
 /* Navbar Area DESKTOP:1440- */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1201px) {
   .desktop__hide {
     display: none; }
   .navbar__desktop {
@@ -372,49 +372,280 @@ body {
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg); } }
 
+/* Navbar Area Responsive 602-767px */
+@media only screen and (min-width: 602px) and (max-width: 800px) {
+  .mobile__hide {
+    display: none; }
+  .navbar__mobile {
+    display: grid;
+    background: white;
+    grid-template-columns: 1fr 6rem;
+    grid-auto-rows: 11vh;
+    position: relative;
+    z-index: 2; }
+  .navbar__mobile--logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .navbar__mobile--logo img {
+    padding: 0 0 0 1rem; }
+  .navbar__mobile--nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  #navbar__links--container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    background: #2d314d;
+    background: linear-gradient(180deg, #2d314d 0%, rgba(255, 255, 255, 0) 100%);
+    width: 100%;
+    margin: 0;
+    top: 11vh;
+    transition: top 0.2s linear; }
+  .slide {
+    top: 11vh !important; }
+  #navbar__links--container ul {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 3; }
+  #navbar__links--container a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    margin: auto;
+    color: #9698a6;
+    font-size: 0.8rem;
+    line-height: 3.98rem;
+    position: relative;
+    z-index: 4; }
+  #navbar__links--container a:hover::after {
+    color: #2d314d; }
+  #navbar__links--container a::after {
+    content: '';
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(95deg, #31d35c, #2bb7da);
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 200ms ease; }
+  #navbar__links--container a:hover::after {
+    transform: scale(1); }
+  #nav__hide {
+    display: block;
+    transition: top 0.2s linear; }
+  .navbar__requestbutton {
+    border-radius: 50px;
+    background: #31d35c;
+    background: linear-gradient(351deg, #31d35c 0%, #2bb7da 100%);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.7rem;
+    border: none;
+    width: 155px; }
+  #nav-icon1 {
+    width: 24px;
+    height: 12px;
+    position: relative;
+    margin: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer; }
+  #nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #2d314d;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out; }
+  #nav-icon1 span:nth-child(1) {
+    top: 0px; }
+  #nav-icon1 span:nth-child(2) {
+    top: 6px; }
+  #nav-icon1 span:nth-child(3) {
+    top: 12px; }
+  #nav-icon1.open span:nth-child(1) {
+    top: 8px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  #nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px; }
+  #nav-icon1.open span:nth-child(3) {
+    top: 8px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg); } }
+
+/* Navbar Area Responsive/Tablet 769-999px */
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .desktop__hide {
+    display: none; }
+  .navbar__desktop {
+    display: grid;
+    background: white;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 4rem;
+    position: relative;
+    z-index: 2; }
+  .navbar__desktop--logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .navbar__desktop--logo img {
+    padding: 0 0 0 2rem; }
+  .navbar__desktop--nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto; }
+  .navbar__desktop--nav a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: auto;
+    padding: 0 0.5rem;
+    color: #9698a6;
+    font-size: 0.8rem;
+    line-height: 3.98rem;
+    position: relative; }
+  .navbar__desktop--nav a:hover::after {
+    color: #2d314d; }
+  .navbar__desktop--nav a::after {
+    content: '';
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(95deg, #31d35c, #2bb7da);
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 200ms ease; }
+  .navbar__desktop--nav a:hover::after {
+    transform: scale(1); }
+  .navbar__desktop--cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin: auto; }
+  .navbar__desktop--requestbutton {
+    border-radius: 50px;
+    background: #31d35c;
+    background: linear-gradient(351deg, #31d35c 0%, #2bb7da 100%);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.65rem;
+    border: none;
+    width: 9rem;
+    height: 2rem; } }
+
 /* Jumbotron Area Desktop */
-.jumbotron {
-  display: grid;
-  background: #fafafa;
-  grid-template-columns: 1fr 48rem;
-  grid-auto-rows: 76vh; }
-
-.jumbotron__blurb {
-  padding: 0 6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto; }
-
-.jumbotron h1 {
-  font-size: 3.5rem;
-  line-height: 4rem;
-  color: #2d314d;
-  font-weight: 300;
-  margin: 0 0; }
-
-.jumbotron p {
-  font-size: 1rem;
-  color: #9698a6;
-  font-weight: 300;
-  line-height: 1.5rem;
-  margin: 2rem 0; }
-
-.jumbotron__splash {
-  background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/bg-intro-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: left 0 bottom -2px;
-  position: relative;
-  z-index: 1; }
-
-.jumbotron__splash img {
-  top: -118px;
-  left: 134px;
-  position: relative;
-  z-index: 1; }
+@media only screen and (min-width: 1201px) {
+  .jumbotron-375-480-hide {
+    display: none; }
+  .jumbotron-481-800-hide {
+    display: none; }
+  .jumbotron-801-999-hide {
+    display: none; }
+  .jumbotron {
+    display: grid;
+    background: #fafafa;
+    grid-template-columns: 1fr 48rem;
+    grid-auto-rows: 53vh; }
+  .jumbotron__blurb {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 30rem;
+    margin: auto 0 auto 6rem; }
+  .jumbotron h1 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+    color: #2d314d;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 4rem 0 0; }
+  .jumbotron p {
+    font-size: 1rem;
+    color: #9698a6;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin: 2rem 0;
+    padding: 0 9rem 0 0; }
+  .jumbotron__splash {
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 0px;
+    background-size: 900px;
+    position: relative;
+    z-index: 1; }
+  .jumbotron__splash img {
+    top: -194px;
+    left: 90px;
+    width: 90%;
+    position: relative;
+    z-index: 1; } }
 
 /* Jumbotron Area MOBILE: 480px */
 @media only screen and (max-width: 480px) and (orientation: portrait) {
+  .jumbotron-481-800-hide {
+    display: none; }
+  .jumbotron-801-999-hide {
+    display: none; }
+  .jumbotron-1000-up-hide {
+    display: none; }
   .jumbotron {
     display: flex;
     width: 100%;
@@ -429,10 +660,9 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
     width: 18rem;
     position: relative;
     z-index: 3;
@@ -449,11 +679,12 @@ body {
     color: #9698a6;
     font-weight: 300;
     line-height: 1.5rem;
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto 2rem auto; }
   .jumbotron__splash {
     background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
-    background-position: left 0 top -114px;
+    background-position: center;
     background-size: 480px;
     position: relative;
     z-index: 0;
@@ -469,20 +700,94 @@ body {
   .jumbotron__splash img {
     top: 0;
     left: 0;
-    width: 231px;
-    position: relative;
-    z-index: 0;
-    margin: auto;
+    width: 360px;
+    height: 314px;
+    margin: 0 auto;
     justify-content: center; } }
 
 /* Jumbotron Area Responsive: 415-601px */
 @media only screen and (min-width: 481px) and (max-width: 601px) {
+  .jumbotron-375-480-hide {
+    display: none; }
+  .jumbotron-1000-up-hide {
+    display: none; }
+  .jumbotron-801-999-hide {
+    display: none; }
   .jumbotron {
     display: flex;
     width: 100%;
     background: #fafafa;
     flex-direction: column-reverse;
     justify-content: center;
+    align-content: center;
+    position: relative;
+    z-index: 0;
+    height: 89vh; }
+  .jumbotron__blurb {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 19rem;
+    position: relative;
+    z-index: 3;
+    top: 0;
+    height: 45.5vh;
+    margin: 3rem auto; }
+  .jumbotron h1 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #2d314d;
+    font-weight: 300;
+    margin: 0; }
+  .jumbotron p {
+    font-size: 0.8rem;
+    color: #9698a6;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 2rem 0; }
+  .jumbotron__splash {
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 45.5vh; }
+  .jumbotron__splash--container {
+    display: flex;
+    background: transparent;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 44.5vh; }
+  .jumbotron__splash img {
+    top: 0;
+    left: 0;
+    width: 459px;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0; } }
+
+/* Jumbotron Area Responsive: 602-767px */
+@media only screen and (min-width: 602px) and (max-width: 800px) {
+  .jumbotron-375-480-hide {
+    display: none; }
+  .jumbotron-1000-up-hide {
+    display: none; }
+  .jumbotron-801-999-hide {
+    display: none; }
+  .jumbotron {
+    display: flex;
+    width: 100%;
+    background: #fafafa;
+    flex-direction: column-reverse;
     align-content: center;
     position: relative;
     z-index: 0;
@@ -498,8 +803,8 @@ body {
     position: relative;
     z-index: 3;
     top: 0;
-    height: 44.5vh;
-    margin: auto; }
+    height: 45.5vh;
+    margin: 3rem auto; }
   .jumbotron h1 {
     font-size: 2.5rem;
     line-height: 3rem;
@@ -512,16 +817,84 @@ body {
     color: #9698a6;
     font-weight: 300;
     line-height: 1.5rem;
-    text-align: center; }
+    text-align: center;
+    margin: 2rem 0; }
   .jumbotron__splash {
     background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
-    background-position: left 0 top -181px;
+    background-position: center;
     background-size: 100%;
     position: relative;
     z-index: 0;
     width: 100%;
-    height: 44.5vh; }
+    height: 45.5vh; }
+  .jumbotron__splash--container {
+    display: flex;
+    background: transparent;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 45vh; }
+  .jumbotron__splash img {
+    top: 0;
+    left: 0;
+    width: 459px;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0; } }
+
+/* Jumbotron Area Responsive/Tablet: 769-999px */
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .jumbotron-375-480-hide {
+    display: none; }
+  .jumbotron-481-800-hide {
+    display: none; }
+  .jumbotron-1000-up-hide {
+    display: none; }
+  .jumbotron {
+    display: flex;
+    width: 100%;
+    background: #fafafa;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    z-index: 1;
+    height: 30rem; }
+  .jumbotron__blurb {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 32rem;
+    position: relative;
+    z-index: 0;
+    top: 0;
+    margin: auto 4rem; }
+  .jumbotron h1 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-align: left;
+    color: #2d314d;
+    font-weight: 300;
+    padding: 0 3rem 0 0;
+    margin: 0 0 1.5rem 0; }
+  .jumbotron p {
+    font-size: 0.8rem;
+    color: #9698a6;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align: left;
+    margin: 0 0 2rem 0; }
+  .jumbotron__splash {
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: left -17px bottom 20px;
+    background-size: 700px;
+    position: relative;
+    z-index: 1; }
   .jumbotron__splash--container {
     display: flex;
     background: transparent;
@@ -530,9 +903,9 @@ body {
     width: 100%;
     height: 44.5vh; }
   .jumbotron__splash img {
-    top: 0;
-    left: 0;
-    width: 269px;
+    top: -79px;
+    left: 97px;
+    width: 96%;
     position: relative;
     z-index: 0;
     margin: auto;
@@ -541,92 +914,24 @@ body {
     padding: 1rem 0; } }
 
 /* Section: Expertise DESKTOP */
-.section__expertise {
-  display: grid;
-  background: #f3f4f6;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 13rem 1fr;
-  width: 100%;
-  margin: auto;
-  position: relative;
-  z-index: 0;
-  padding: 5rem 6rem; }
-
-.section__expertise--blurb {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 55rem 0 0; }
-
-.section__expertise--blurb h2 {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  color: #2d314d;
-  font-weight: 300;
-  margin: 0 0; }
-
-.section__expertise--blurb p {
-  font-size: 1rem;
-  color: #9698a6;
-  font-weight: 300;
-  line-height: 1.5rem;
-  margin: 1.5rem 0; }
-
-.section__expertise--cardcontainer {
-  display: flex;
-  flex-direction: row;
-  background: transparent; }
-
-.section__expertise--cards_style {
-  display: flex;
-  flex-direction: column;
-  width: 18rem;
-  padding: 0;
-  margin: 0 2rem 0 0; }
-
-.section__expertise--cards_style img {
-  width: 72px; }
-
-.section__expertise--cards_style h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: #2d314d;
-  font-weight: 300;
-  text-align: left;
-  margin: 2rem 0 1rem 0; }
-
-.section__expertise--cards_style p {
-  font-size: 0.8rem;
-  color: #9698a6;
-  font-weight: 300;
-  line-height: 1.4rem;
-  padding-right: 14%; }
-
-/* Section: Expertise Area MOBILE:480px */
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 1201px) {
   .section__expertise {
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
     position: relative;
     z-index: 0;
     background: #f3f4f6;
-    padding: 5rem 0 5rem 0;
-    margin: auto; }
+    padding: 5rem 0 5rem 0; }
   .section__expertise--blurb {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
-    padding: 0;
-    width: 18rem;
-    margin: auto; }
+    margin: auto 6rem 4rem 6rem; }
   .section__expertise--blurb h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: left;
     color: #2d314d;
     font-weight: 300;
     padding: 0 0 1rem 0;
@@ -634,51 +939,132 @@ body {
   .section__expertise--blurb p {
     color: #9698a6;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #9698a6;
     font-weight: 300;
     line-height: 1.5rem;
-    text-align: center;
-    margin: 0;
-    padding: 0; }
+    text-align: left;
+    width: 29rem;
+    margin: 0; }
   .section__expertise--cardcontainer {
     display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     background: #f3f4f6;
-    width: 18rem;
-    margin: auto; }
+    margin: 0 2rem 0 6rem; }
   .section__expertise--cards_style {
     display: flex;
-    justify-content: center;
-    align-items: center;
     align-content: center;
     flex-direction: column;
     width: 18rem;
-    padding: 3rem 0 0 0;
+    padding: 2rem 2rem 0 0;
     margin: 0; }
   .section__expertise--cards_style img {
-    width: 72px;
-    margin: auto; }
+    width: 72px; }
   .section__expertise--cards_style h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 2rem;
     color: #2d314d;
     font-weight: 300;
-    text-align: center;
-    margin: auto;
-    padding: 2rem 0 0.5rem 0; }
+    text-align: left;
+    padding: 2rem 0 0 0;
+    margin: 0; }
   .section__expertise--cards_style p {
     color: #9698a6;
     font-weight: 300;
     font-size: 0.8rem;
     font-weight: 300;
     line-height: 1.4rem;
-    line-height: 1.4rem;
     padding: 0;
-    margin: 0;
-    text-align: center; } }
+    text-align: left; } }
+
+/* Section: Articles Area DESKTOP */
+@media only screen and (min-width: 1201px) {
+  .section__articles {
+    display: grid;
+    align-content: center;
+    background: #fafafa;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 8rem 1fr;
+    padding: 3.25rem 6rem 7rem 6rem; }
+  .section__articles--blurb {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 3rem 10rem;
+    width: 100%; }
+  .section__articles--blurb h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #2d314d;
+    font-weight: 300;
+    margin: 0 0; }
+  .section__articles--cardcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .section__articles--cardcontainer__style {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 7px;
+    width: 17rem; }
+  .section__articles--cardcontainer__style--img__1 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-currency.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 221px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__2 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-restaurant.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 221px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__3 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-plane.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 221px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__4 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-confetti.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 221px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--blurb h4 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #2d314d;
+    font-weight: 400;
+    text-align: left; }
+  .section__articles--cardcontainer__style--blurb {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    font-size: 0.8rem;
+    color: #9698a6;
+    font-weight: 300; }
+  .section__articles--cardcontainer__style--blurb span {
+    font-size: 0.7rem;
+    color: #9698a6;
+    font-weight: 400;
+    display: block;
+    line-height: 1rem;
+    padding-right: 14%; }
+  .section__articles--cardcontainer__style--blurb p {
+    margin: 0 0;
+    font-size: 0.75rem;
+    line-height: 1.5rem; } }
 
 /* Section: Expertise Area Responsive:481-601px */
 @media only screen and (min-width: 481px) and (max-width: 601px) {
@@ -752,102 +1138,233 @@ body {
     padding: 0;
     text-align: center; } }
 
+/* Section: Expertise Area Responsive:602-768px */
+@media only screen and (min-width: 602px) and (max-width: 800px) {
+  .section__expertise {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    background: #f3f4f6;
+    padding: 5rem 0 5rem 0; }
+  .section__expertise--blurb {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 0 2rem 0;
+    width: 22rem; }
+  .section__expertise--blurb h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #2d314d;
+    font-weight: 300;
+    padding: 0 0 1rem 0;
+    margin: 0; }
+  .section__expertise--blurb p {
+    color: #9698a6;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #9698a6;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0; }
+  .section__expertise--cardcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f3f4f6;
+    margin: auto; }
+  .section__expertise--cards_style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    width: 18rem;
+    padding: 2rem 0 0 0;
+    margin: 0; }
+  .section__expertise--cards_style img {
+    width: 72px; }
+  .section__expertise--cards_style h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #2d314d;
+    font-weight: 300;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    margin: auto; }
+  .section__expertise--cards_style p {
+    color: #9698a6;
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    padding: 0;
+    text-align: center; } }
+
+/* Section: Expertise Area Responsive:769-999px */
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .section__expertise {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    background: #f3f4f6;
+    padding: 5rem 0 5rem 0; }
+  .section__expertise--blurb {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0 0 2rem 0;
+    margin: auto 4rem; }
+  .section__expertise--blurb h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: left;
+    color: #2d314d;
+    font-weight: 300;
+    padding: 0 0 1rem 0;
+    margin: 0; }
+  .section__expertise--blurb p {
+    color: #9698a6;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #9698a6;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 0 20rem 0 0;
+    margin: 0; }
+  .section__expertise--cardcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #f3f4f6;
+    margin: 0 2rem 0 4rem; }
+  .section__expertise--cards_style {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 18rem;
+    padding: 2rem 2rem 0 0;
+    margin: 0; }
+  .section__expertise--cards_style img {
+    width: 72px; }
+  .section__expertise--cards_style h3 {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #2d314d;
+    font-weight: 300;
+    text-align: left;
+    padding: 1rem 0 0 0;
+    margin: 0; }
+  .section__expertise--cards_style p {
+    color: #9698a6;
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    padding: 0;
+    text-align: left; } }
+
 /* Section: Articles Area DESKTOP */
-.section__articles {
-  display: grid;
-  align-content: center;
-  background: #fafafa;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 8rem 1fr;
-  padding: 3.25rem 6rem 7rem 6rem; }
-
-.section__articles--blurb {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.section__articles--blurb h2 {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  color: #2d314d;
-  font-weight: 300;
-  margin: 0 0; }
-
-.section__articles--cardcontainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.section__articles--cardcontainer__style {
-  display: flex;
-  flex-direction: column;
-  background: white;
-  border-radius: 7px;
-  width: 18rem; }
-
-.section__articles--cardcontainer__style--img__1 {
-  width: 100%;
-  background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-currency.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 221px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px; }
-
-.section__articles--cardcontainer__style--img__2 {
-  width: 100%;
-  background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-restaurant.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 221px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px; }
-
-.section__articles--cardcontainer__style--img__3 {
-  width: 100%;
-  background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-plane.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 221px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px; }
-
-.section__articles--cardcontainer__style--img__4 {
-  width: 100%;
-  background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-confetti.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 221px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px; }
-
-.section__articles--cardcontainer__style--blurb h4 {
-  font-size: 1rem;
-  line-height: 1.2rem;
-  color: #2d314d;
-  font-weight: 400;
-  text-align: left; }
-
-.section__articles--cardcontainer__style--blurb {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  padding: 1.5rem 1rem 1.5rem 1rem;
-  font-size: 0.8rem;
-  color: #9698a6;
-  font-weight: 300; }
-
-.section__articles--cardcontainer__style--blurb span {
-  font-size: 0.7rem;
-  color: #9698a6;
-  font-weight: 400;
-  display: block;
-  line-height: 1rem;
-  padding-right: 14%; }
-
-.section__articles--cardcontainer__style--blurb p {
-  margin: 0 0;
-  font-size: 0.75rem; }
+@media only screen and (min-width: 1201px) {
+  .section__articles {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #fafafa;
+    width: 100%;
+    padding: 3rem 0 5rem 0; }
+  .section__articles--blurb {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 3rem 10rem; }
+  .section__articles--blurb h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #2d314d;
+    font-weight: 300;
+    margin: 0; }
+  .section__articles--cardcontainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 4rem; }
+  .section__articles--cardcontainer__style {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 7px;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    margin: 0 0 0 1rem; }
+  .section__articles--cardcontainer__style--img__1 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-currency.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__2 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-restaurant.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__3 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-plane.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__4 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-confetti.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--blurb h4 {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: #2d314d;
+    font-weight: 400;
+    text-align: left;
+    padding: 0; }
+  .section__articles--cardcontainer__style--blurb {
+    font-size: 0.8rem;
+    color: #9698a6;
+    font-weight: 300;
+    line-height: 1.4rem;
+    align-content: center;
+    padding: 2rem 1rem; }
+  .section__articles--cardcontainer__style--blurb span {
+    font-size: 0.7rem;
+    color: #9698a6;
+    font-weight: 400;
+    display: block;
+    line-height: 1rem; }
+  .section__articles--cardcontainer__style--blurb p {
+    padding: 0;
+    margin: 0; } }
 
 /* Section: Articles Area MOBILE:480px */
 @media only screen and (max-width: 480px) {
@@ -866,7 +1383,7 @@ body {
     justify-content: center;
     align-content: center;
     margin: auto;
-    padding: 3rem 0 2rem 0;
+    padding: 3rem 0 0 0;
     width: 18rem; }
   .section__articles--blurb h2 {
     font-size: 1.5rem;
@@ -881,7 +1398,8 @@ body {
     justify-content: center;
     align-content: center;
     margin: auto;
-    width: 18rem; }
+    width: 18rem;
+    padding: 0 0 5rem 0; }
   .section__articles--cardcontainer__style {
     display: flex;
     flex-direction: column;
@@ -889,7 +1407,7 @@ body {
     justify-content: center;
     background: white;
     border-radius: 7px;
-    margin: 0 0 2rem 0; }
+    margin: 2rem 0 0 0; }
   .section__articles--cardcontainer__style--img__1 {
     width: 100%;
     background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-currency.jpg");
@@ -935,8 +1453,7 @@ body {
     line-height: 1.4rem;
     padding: 2rem 2rem 2rem 1rem;
     justify-content: center;
-    align-content: center;
-    align-items: center; }
+    align-content: center; }
   .section__articles--cardcontainer__style--blurb span {
     font-size: 0.7rem;
     color: #9698a6;
@@ -1044,62 +1561,256 @@ body {
     padding: 0 0 1rem 0;
     margin: 0; } }
 
-/* Section: Footer DESKTOP */
-.footer {
-  background: #2d314d;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 2rem 0 2rem 0;
-  width: 100%;
-  height: 12rem;
-  color: white; }
+/* Section: Articles Area Responsive: 602px */
+@media only screen and (min-width: 602px) and (max-width: 800px) {
+  .section__articles {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #fafafa;
+    width: 100%;
+    padding: 3rem 0 5rem 0; }
+  .section__articles--blurb {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 18rem; }
+  .section__articles--blurb h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #2d314d;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 0 2rem 0;
+    text-align: center; }
+  .section__articles--cardcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 22rem; }
+  .section__articles--cardcontainer__style {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background: white;
+    border-radius: 7px;
+    width: 100%;
+    margin: 0 0 2rem 0; }
+  .section__articles--cardcontainer__style--img__1 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-currency.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 221px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__2 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-restaurant.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 221px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__3 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-plane.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 221px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__4 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-confetti.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 221px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--blurb h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #2d314d;
+    font-weight: 400;
+    text-align: left;
+    padding: 0 2rem 0 0; }
+  .section__articles--cardcontainer__style--blurb {
+    font-size: 0.8rem;
+    color: #9698a6;
+    font-weight: 300;
+    line-height: 1.4rem;
+    align-content: center;
+    padding: 2rem 2rem 2rem 1rem; }
+  .section__articles--cardcontainer__style--blurb span {
+    font-size: 0.7rem;
+    color: #9698a6;
+    font-weight: 400;
+    display: block;
+    line-height: 1rem; }
+  .section__articles--cardcontainer__style--blurb p {
+    padding: 0 0 1rem 0;
+    margin: 0; } }
 
-.footer__column1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+/* Section: Articles Area Responsive/Tablet: 769-999px */
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .section__articles {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #fafafa;
+    width: 100%;
+    padding: 3rem 0 5rem 0; }
+  .section__articles--blurb {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 18rem; }
+  .section__articles--blurb h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #2d314d;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 0 2rem 0;
+    text-align: center; }
+  .section__articles--cardcontainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 4rem; }
+  .section__articles--cardcontainer__style {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 7px;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    margin: 0 0 0 1rem; }
+  .section__articles--cardcontainer__style--img__1 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-currency.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__2 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-restaurant.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__3 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-plane.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--img__4 {
+    width: 100%;
+    background: url("file:///Users/sydneehaley/Desktop/Easybank-Landing-Page-Design/public/images/image-confetti.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .section__articles--cardcontainer__style--blurb h4 {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: #2d314d;
+    font-weight: 400;
+    text-align: left;
+    padding: 0; }
+  .section__articles--cardcontainer__style--blurb {
+    font-size: 0.8rem;
+    color: #9698a6;
+    font-weight: 300;
+    line-height: 1.4rem;
+    align-content: center;
+    padding: 2rem 1rem; }
+  .section__articles--cardcontainer__style--blurb span {
+    font-size: 0.7rem;
+    color: #9698a6;
+    font-weight: 400;
+    display: block;
+    line-height: 1rem; }
+  .section__articles--cardcontainer__style--blurb p {
+    padding: 0;
+    margin: 0; } }
 
-.footer__column1--logo {
-  margin: 0 0 2rem 0; }
-
-.footer__column1--social {
-  display: flex; }
-
-.footer__column1--social img {
-  padding: 0 1rem 0 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center; }
-
-.footer__footmapnav {
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
-.footer__footmapnav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 2rem 0 0;
-  font-size: 0.8rem;
-  line-height: 1.5rem;
-  text-align: left; }
-
-.footer__footmapnav li {
-  display: block; }
-
-.footer_buttoncopyright {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.footer_buttoncopyright p {
-  font-size: 0.8rem;
-  line-height: 1.5rem;
-  color: #9698a6; }
+@media only screen and (min-width: 1201px) {
+  .footer {
+    background: #2d314d;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 100%;
+    padding: 3rem 0; }
+  .footer__column1 {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    margin: auto; }
+  .footer__column1--logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0; }
+  .footer__column1--social {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+  .footer__column1--social img {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; }
+  .footer__footmapnav {
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 18rem; }
+  .footer__footmapnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    text-align: center; }
+  .footer__footmapnav li {
+    text-align: center; }
+  .footer_buttoncopyright {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 18rem;
+    margin: auto; }
+  .footer_buttoncopyright p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #9698a6;
+    margin: 1rem 0 0 0; } }
 
 /* Section: Footer MOBILE:480px */
 @media only screen and (max-width: 480px) {
@@ -1108,7 +1819,8 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
-    height: 100%; }
+    height: 100%;
+    padding: 3rem 0; }
   .footer__column1 {
     justify-content: center;
     align-content: center;
@@ -1170,7 +1882,8 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
-    height: 100%; }
+    height: 100%;
+    padding: 3rem 0; }
   .footer__column1 {
     justify-content: center;
     align-content: center;
@@ -1225,17 +1938,141 @@ body {
     color: #9698a6;
     margin: 1rem 0 0 0; } }
 
+/* Section: Footer Responsive: 602-768px */
+@media only screen and (min-width: 602px) and (max-width: 800px) {
+  .footer {
+    background: #2d314d;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100%;
+    padding: 3rem 0; }
+  .footer__column1 {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    margin: auto; }
+  .footer__column1--logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0; }
+  .footer__column1--social {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+  .footer__column1--social img {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; }
+  .footer__footmapnav {
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem 0 0 0;
+    width: 18rem; }
+  .footer__footmapnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    text-align: center; }
+  .footer__footmapnav li {
+    text-align: center; }
+  .footer_buttoncopyright {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 18rem;
+    margin: auto;
+    padding: 2rem 0 0 0; }
+  .footer_buttoncopyright p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #9698a6;
+    margin: 1rem 0 0 0; } }
+
+/* Section: Footer Responsive: 769-999px */
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .footer {
+    background: #2d314d;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 100%;
+    padding: 3rem 0; }
+  .footer__column1 {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    margin: auto; }
+  .footer__column1--logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0; }
+  .footer__column1--social {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+  .footer__column1--social img {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; }
+  .footer__footmapnav {
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 18rem; }
+  .footer__footmapnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    text-align: center; }
+  .footer__footmapnav li {
+    text-align: center; }
+  .footer_buttoncopyright {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 18rem;
+    margin: auto; }
+  .footer_buttoncopyright p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #9698a6;
+    margin: 1rem 0 0 0; } }
+
 /* Buttons DESKTOP */
-.button__request {
-  border-radius: 50px;
-  background: #31d35c;
-  background: linear-gradient(351deg, #31d35c 0%, #2bb7da 100%);
-  color: white;
-  font-size: 0.7rem;
-  padding: 0.65rem;
-  border: none;
-  width: 9rem;
-  margin: 0 0; }
+@media only screen and (min-width: 1201px) {
+  .button__request {
+    border-radius: 50px;
+    background: #31d35c;
+    background: linear-gradient(351deg, #31d35c 0%, #2bb7da 100%);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.65rem;
+    border: none;
+    width: 9rem;
+    margin: 0 0; } }
 
 /* Buttons MOBILE:480px */
 @media only screen and (max-width: 480px) {
@@ -1252,6 +2089,32 @@ body {
 
 /* Buttons Responsive: 481-601px */
 @media only screen and (min-width: 480px) and (max-width: 601px) {
+  .button__request {
+    border-radius: 50px;
+    background: #31d35c;
+    background: linear-gradient(351deg, #31d35c 0%, #2bb7da 100%);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.7rem;
+    border: none;
+    width: 155px;
+    margin: 0rem; } }
+
+/* Buttons Responsive: 602-768px */
+@media only screen and (min-width: 602px) and (max-width: 800px) {
+  .button__request {
+    border-radius: 50px;
+    background: #31d35c;
+    background: linear-gradient(351deg, #31d35c 0%, #2bb7da 100%);
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    border: none;
+    width: 168px;
+    margin: 0rem; } }
+
+/* Buttons Responsive/Tablet: 769-999px */
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
   .button__request {
     border-radius: 50px;
     background: #31d35c;
