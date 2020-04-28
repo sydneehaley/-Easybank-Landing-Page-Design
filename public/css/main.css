@@ -978,94 +978,6 @@ body {
     padding: 0;
     text-align: left; } }
 
-/* Section: Articles Area DESKTOP */
-@media only screen and (min-width: 1201px) {
-  .section__articles {
-    display: grid;
-    align-content: center;
-    background: #fafafa;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 8rem 1fr;
-    padding: 3.25rem 6rem 7rem 6rem; }
-  .section__articles--blurb {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 3rem 10rem;
-    width: 100%; }
-  .section__articles--blurb h2 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    color: #2d314d;
-    font-weight: 300;
-    margin: 0 0; }
-  .section__articles--cardcontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  .section__articles--cardcontainer__style {
-    display: flex;
-    flex-direction: column;
-    background: white;
-    border-radius: 7px;
-    width: 17rem; }
-  .section__articles--cardcontainer__style--img__1 {
-    width: 100%;
-    background: url("images/image-currency.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 221px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px; }
-  .section__articles--cardcontainer__style--img__2 {
-    width: 100%;
-    background: url("images/image-restaurant.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 221px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px; }
-  .section__articles--cardcontainer__style--img__3 {
-    width: 100%;
-    background: url("images/image-plane.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 221px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px; }
-  .section__articles--cardcontainer__style--img__4 {
-    width: 100%;
-    background: url("images/image-confetti.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 221px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px; }
-  .section__articles--cardcontainer__style--blurb h4 {
-    font-size: 1rem;
-    line-height: 1.2rem;
-    color: #2d314d;
-    font-weight: 400;
-    text-align: left; }
-  .section__articles--cardcontainer__style--blurb {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding: 1.5rem 1rem 1.5rem 1rem;
-    font-size: 0.8rem;
-    color: #9698a6;
-    font-weight: 300; }
-  .section__articles--cardcontainer__style--blurb span {
-    font-size: 0.7rem;
-    color: #9698a6;
-    font-weight: 400;
-    display: block;
-    line-height: 1rem;
-    padding-right: 14%; }
-  .section__articles--cardcontainer__style--blurb p {
-    margin: 0 0;
-    font-size: 0.75rem;
-    line-height: 1.5rem; } }
-
 /* Section: Expertise Area Responsive:481-601px */
 @media only screen and (min-width: 481px) and (max-width: 601px) {
   .section__expertise {
@@ -1073,6 +985,78 @@ body {
     width: 100%;
     flex-direction: column;
     justify-items: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    background: #f3f4f6;
+    padding: 5rem 0 5rem 0; }
+  .section__expertise--blurb {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 0 2rem 0;
+    width: 22rem; }
+  .section__expertise--blurb h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #2d314d;
+    font-weight: 300;
+    padding: 0 0 1rem 0;
+    margin: 0; }
+  .section__expertise--blurb p {
+    color: #9698a6;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #9698a6;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0; }
+  .section__expertise--cardcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f3f4f6;
+    margin: auto; }
+  .section__expertise--cards_style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    width: 18rem;
+    padding: 2rem 0 0 0;
+    margin: 0; }
+  .section__expertise--cards_style img {
+    width: 72px; }
+  .section__expertise--cards_style h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #2d314d;
+    font-weight: 300;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    margin: auto; }
+  .section__expertise--cards_style p {
+    color: #9698a6;
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    padding: 0;
+    text-align: center; } }
+
+/* Section: Expertise Area MOBILE:480px */
+@media only screen and (max-width: 480px) {
+  .section__expertise {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
     align-items: center;
     position: relative;
     z-index: 0;
