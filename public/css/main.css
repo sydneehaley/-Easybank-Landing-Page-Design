@@ -625,7 +625,7 @@ body {
     margin: 2rem 0;
     padding: 0 9rem 0 0; }
   .jumbotron__splash {
-    background: url("./public/images/bg-intro-desktop.svg");
+    background: url("images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
     background-position: left 0 bottom 0px;
     background-size: 900px;
@@ -682,7 +682,7 @@ body {
     text-align: center;
     margin: 0 auto 2rem auto; }
   .jumbotron__splash {
-    background: url("./public/images/bg-intro-mobile.svg");
+    background: url("images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 480px;
@@ -749,7 +749,7 @@ body {
     text-align: center;
     margin: 2rem 0; }
   .jumbotron__splash {
-    background: url("./public/images/bg-intro-mobile.svg");
+    background: url("images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -820,7 +820,7 @@ body {
     text-align: center;
     margin: 2rem 0; }
   .jumbotron__splash {
-    background: url("./public/images/bg-intro-mobile.svg");
+    background: url("images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -889,7 +889,7 @@ body {
     text-align: left;
     margin: 0 0 2rem 0; }
   .jumbotron__splash {
-    background: url("./public/images/bg-intro-desktop.svg");
+    background: url("images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
     background-position: left -17px bottom 20px;
     background-size: 700px;
@@ -1010,7 +1010,7 @@ body {
     width: 17rem; }
   .section__articles--cardcontainer__style--img__1 {
     width: 100%;
-    background: url("./public/images/image-currency.jpg");
+    background: url("images/image-currency.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1018,7 +1018,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__2 {
     width: 100%;
-    background: url("./public/images/image-restaurant.jpg");
+    background: url("images/image-restaurant.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1026,7 +1026,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__3 {
     width: 100%;
-    background: url("./public/images/image-plane.jpg");
+    background: url("images/image-plane.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1034,7 +1034,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__4 {
     width: 100%;
-    background: url("./public/images/image-confetti.jpg");
+    background: url("images/image-confetti.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1312,7 +1312,7 @@ body {
     margin: 0 0 0 1rem; }
   .section__articles--cardcontainer__style--img__1 {
     width: 100%;
-    background: url("./public/images/image-currency.jpg");
+    background: url("images/image-currency.jpg");
     background-size: cover;
     background-position: center;
     height: 180px;
@@ -1320,7 +1320,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__2 {
     width: 100%;
-    background: url("./public/images/image-restaurant.jpg");
+    background: url("images/image-restaurant.jpg");
     background-size: cover;
     background-position: center;
     height: 180px;
@@ -1336,7 +1336,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__4 {
     width: 100%;
-    background: url("./public/images/image-confetti.jpg");
+    background: url("images/image-confetti.jpg");
     background-size: cover;
     background-position: center;
     height: 180px;
@@ -1410,7 +1410,7 @@ body {
     margin: 2rem 0 0 0; }
   .section__articles--cardcontainer__style--img__1 {
     width: 100%;
-    background: url("./public/images/image-currency.jpg");
+    background: url("images/image-currency.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1418,7 +1418,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__2 {
     width: 100%;
-    background: url("./public/images/mage-restaurant.jpg");
+    background: url("images/mage-restaurant.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1426,7 +1426,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__3 {
     width: 100%;
-    background: url("./public/images/mage-plane.jpg");
+    background: url("images/mage-plane.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1434,7 +1434,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__4 {
     width: 100%;
-    background: url("./public/images/mage-confetti.jpg");
+    background: url("images/mage-confetti.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1507,7 +1507,7 @@ body {
     margin: 0 0 2rem 0; }
   .section__articles--cardcontainer__style--img__1 {
     width: 100%;
-    background: url("./public/images/image-currency.jpg");
+    background: url("images/image-currency.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1515,7 +1515,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__2 {
     width: 100%;
-    background: url("./public/images/image-restaurant.jpg");
+    background: url("images/image-restaurant.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1523,7 +1523,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__3 {
     width: 100%;
-    background: url("./public/images/image-plane.jpg");
+    background: url("images/image-plane.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1531,7 +1531,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__4 {
     width: 100%;
-    background: url("./public/images/image-confetti.jpg");
+    background: url("images/image-confetti.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1605,7 +1605,7 @@ body {
     margin: 0 0 2rem 0; }
   .section__articles--cardcontainer__style--img__1 {
     width: 100%;
-    background: url("./public/images/image-currency.jpg");
+    background: url("images/image-currency.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1613,7 +1613,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__2 {
     width: 100%;
-    background: url("./public/images/mage-restaurant.jpg");
+    background: url("images/mage-restaurant.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1621,7 +1621,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__3 {
     width: 100%;
-    background: url("./public/images/mage-plane.jpg");
+    background: url("images/mage-plane.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1629,7 +1629,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__4 {
     width: 100%;
-    background: url("./public/images/image-confetti.jpg");
+    background: url("images/image-confetti.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1699,7 +1699,7 @@ body {
     margin: 0 0 0 1rem; }
   .section__articles--cardcontainer__style--img__1 {
     width: 100%;
-    background: url("./public/images/image-currency.jpg");
+    background: url("images/image-currency.jpg");
     background-size: cover;
     background-position: center;
     height: 180px;
@@ -1707,7 +1707,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__2 {
     width: 100%;
-    background: url("./public/images/image-restaurant.jpg");
+    background: url("images/image-restaurant.jpg");
     background-size: cover;
     background-position: center;
     height: 180px;
@@ -1715,7 +1715,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__3 {
     width: 100%;
-    background: url("./public/images/image-plane.jpg");
+    background: url("images/image-plane.jpg");
     background-size: cover;
     background-position: center;
     height: 180px;
@@ -1723,7 +1723,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__4 {
     width: 100%;
-    background: url("./public/images/image-confetti.jpg");
+    background: url("images/image-confetti.jpg");
     background-size: cover;
     background-position: center;
     height: 180px;
