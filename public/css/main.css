@@ -1328,7 +1328,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__3 {
     width: 100%;
-    background: url("./public/images/image-plane.jpg");
+    background: url("images/image-plane.jpg");
     background-size: cover;
     background-position: center;
     height: 180px;
