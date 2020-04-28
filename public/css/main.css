@@ -978,13 +978,13 @@ body {
     padding: 0;
     text-align: left; } }
 
-/* Section: Expertise Area Responsive:481-601px */
-@media only screen and (min-width: 481px) and (max-width: 601px) {
+/* Section: Expertise Area MOBILE:480px */
+@media only screen and (max-width: 480px) {
   .section__expertise {
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-items: center;
+    align-content: center;
     align-items: center;
     position: relative;
     z-index: 0;
@@ -1050,13 +1050,13 @@ body {
     padding: 0;
     text-align: center; } }
 
-/* Section: Expertise Area MOBILE:480px */
-@media only screen and (max-width: 480px) {
+/* Section: Expertise Area Responsive:481-601px */
+@media only screen and (min-width: 481px) and (max-width: 601px) {
   .section__expertise {
     display: flex;
     width: 100%;
     flex-direction: column;
-    align-content: center;
+    justify-items: center;
     align-items: center;
     position: relative;
     z-index: 0;
@@ -1402,7 +1402,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__2 {
     width: 100%;
-    background: url("images/mage-restaurant.jpg");
+    background: url("images/image-restaurant.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1410,7 +1410,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__3 {
     width: 100%;
-    background: url("images/mage-plane.jpg");
+    background: url("images/image-plane.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
@@ -1418,7 +1418,7 @@ body {
     border-top-right-radius: 7px; }
   .section__articles--cardcontainer__style--img__4 {
     width: 100%;
-    background: url("images/mage-confetti.jpg");
+    background: url("images/image-confetti.jpg");
     background-size: cover;
     background-position: center;
     height: 221px;
