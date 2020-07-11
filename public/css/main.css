@@ -603,7 +603,7 @@ body {
     display: grid;
     background: #fafafa;
     grid-template-columns: 1fr 48rem;
-    grid-auto-rows: 53vh; }
+    grid-auto-rows: 35rem; }
   .jumbotron__blurb {
     display: flex;
     flex-direction: column;
@@ -633,7 +633,7 @@ body {
     z-index: 1; }
   .jumbotron__splash img {
     top: -194px;
-    left: 90px;
+    left: 168px;
     width: 90%;
     position: relative;
     z-index: 1; } }
