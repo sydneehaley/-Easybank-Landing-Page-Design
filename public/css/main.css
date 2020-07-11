@@ -144,7 +144,7 @@ body {
   .slide {
     top: 10vh !important;
   }
-  #navbar__links--container ul {
+  #navbar__links--container--links {
     background: white;
     display: flex;
     flex-direction: column;
@@ -155,7 +155,7 @@ body {
     position: relative;
     z-index: 3;
   }
-  #navbar__links--container a {
+  #navbar__links--container--links a {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -174,10 +174,10 @@ body {
     position: relative;
     z-index: 4;
   }
-  #navbar__links--container a:hover::after {
+  #navbar__links--container--links a:hover::after {
     color: #2d314d;
   }
-  #navbar__links--container a::after {
+  #navbar__links--container--links a::after {
     content: '';
     text-decoration: none;
     position: absolute;
@@ -190,7 +190,7 @@ body {
     transform: scale(0);
     transition: transform 200ms ease;
   }
-  #navbar__links--container a:hover::after {
+  #navbar__links--container--links a:hover::after {
     transform: scale(1);
   }
   #nav__hide {
@@ -315,7 +315,7 @@ body {
   .slide {
     top: 11vh !important;
   }
-  #navbar__links--container ul {
+  #navbar__links--container--links {
     background: white;
     display: flex;
     flex-direction: column;
@@ -326,7 +326,7 @@ body {
     position: relative;
     z-index: 3;
   }
-  #navbar__links--container a {
+  #navbar__links--container--links a {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -345,10 +345,10 @@ body {
     position: relative;
     z-index: 4;
   }
-  #navbar__links--container a:hover::after {
+  #navbar__links--container--links a:hover::after {
     color: #2d314d;
   }
-  #navbar__links--container a::after {
+  #navbar__links--container--links a::after {
     content: '';
     text-decoration: none;
     position: absolute;
@@ -361,7 +361,7 @@ body {
     transform: scale(0);
     transition: transform 200ms ease;
   }
-  #navbar__links--container a:hover::after {
+  #navbar__links--container--links a:hover::after {
     transform: scale(1);
   }
   #nav__hide {
@@ -486,7 +486,7 @@ body {
   .slide {
     top: 11vh !important;
   }
-  #navbar__links--container ul {
+  #navbar__links--container--links {
     background: white;
     display: flex;
     flex-direction: column;
@@ -1070,7 +1070,7 @@ body {
     position: relative;
     z-index: 3;
     width: 100%;
-    height: 44.5vh;
+    height: 35rem;
   }
   .jumbotron__splash img {
     top: -79px;
